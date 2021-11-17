@@ -196,12 +196,15 @@ awk -F"[ :]" '{ print $1, $2 } ' datafile : 입력 필드로 스페이스와 ':'
 
 awk -f awk_script.file datafile : -f 옵션은 awk 스크립트 파일 사용할 때 씀.
 
-
-
-
 awk '$7 == 5' datafile : 7번 필드가 5와 같다면 출력
+
 awk '$2 == "CT" { print $1, $2 }' datafile : 2번 필드가 "CT" 문자와 같으면 1, 2 번 필드 출력
+
 awk '$7 < 5 { print $4, $7}' datafile : 7번 필드가 5보다 작다면 4번, 7번 필드 출력
+
 awk '$6 > .9 { print $1, $6}' datafile : 6번 필드가 .9 보다 크다면 1번, 6번 출력
+
 awk '$8 > 10 && $8 < 17 ' datafile
+
 awk '$2 == "NW" || $1 ~ /south/ { print $1, $2 }' datafile
+
