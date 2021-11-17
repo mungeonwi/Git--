@@ -5,11 +5,13 @@ assignment-1
 getopts 유틸리티는 파라메터들의 리스트에서 옵션(options)과 옵션-파라메터(option-parameter)를 추출하는데 사용한다.
 
 getopt = 외부 명령 
+
 getopts = 쉘 내장
 
 사용이유
 ------------------------
 1. 다양한 입력 값이 존재할 경우 사용자와 개발자의 편의를 보장하기 위함 
+
 2. 스크립트를 보다 체계적으로 관리할 수 있기 때문입니다.
 
 'While getopts "a:b:h" opt'
