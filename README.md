@@ -211,3 +211,4 @@ awk '$8 > 10 && $8 < 17 ' datafile
 awk '$2 == "NW" || $1 ~ /south/ { print $1, $2 }' datafile
 
 ...
+.
